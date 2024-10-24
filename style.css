@@ -1,0 +1,244 @@
+
+body, html {
+    background-color: black;
+}
+
+.neon-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: #111;
+    color: #fff;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ff00,
+                0 0 20px #00ff00,
+                0 0 30px #00ff00,
+                0 0 40px #00ff00;
+    transition: all 0.2s ease-in-out;
+  }
+
+.neon-glow {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(157, 255, 0, 0.8),
+                0 0 20px rgba(157, 255, 0, 0.6),
+                0 0 30px rgba(157, 255, 0, 0.4),
+                0 0 40px rgba(157, 255, 0, 0.2);
+    border: 2px solid rgba(157, 255, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .neon-glow:hover {
+    box-shadow: 0 0 20px rgba(102, 0, 255, 1),
+                0 0 30px rgba(102, 0, 255, 0.8),
+                0 0 40px rgba(102, 0, 255, 0.6),
+                0 0 50px rgba(102, 0, 255, 0.4);
+    transform: scale(1.05);
+  }
+  
+  .neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+                 0 0 10px rgba(255, 255, 255, 0.7),
+                 0 0 20px #4800ff,
+                 0 0 30px #4800ff,
+                 0 0 40px #4800ff,
+                 0 0 50px #4800ff,
+                 0 0 60px #4800ff,
+                 0 0 70px #4800ff;
+    animation: flicker 1.5s infinite alternate;
+  }
+  
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+                   0 0 10px rgba(255, 255, 255, 0.7),
+                   0 0 20px #4800ff,
+                   0 0 30px #4800ff,
+                   0 0 40px #4800ff,
+                   0 0 50px #4800ff,
+                   0 0 60px #4800ff,
+                   0 0 70px #4800ff;
+    }
+    50% {
+      opacity: 0.8;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
+                   0 0 10px rgba(255, 255, 255, 0.6),
+                   0 0 20px #00ff00,
+                   0 0 30px #00ff00,
+                   0 0 40px #00ff00,
+                   0 0 50px #00ff00,
+                   0 0 60px #00ff00,
+                   0 0 70px #00ff00;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.9),
+                   0 0 10px rgba(255, 255, 255, 0.9),
+                   0 0 20px #00ff00,
+                   0 0 30px #00ff00,
+                   0 0 40px #00ff00,
+                   0 0 50px #00ff00,
+                   0 0 60px #00ff00,
+                   0 0 70px #00ff00;
+    }
+  }
+
+.verticalBox{
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    border-color:#4500ff;
+    width: 10px;
+    height: 1px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 45%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-left: 1%;
+}
+
+.margineLeft{
+    margin-left: 90%;
+    margin-top: -0.6%;
+}
+
+.margineRight{
+    margin-right: 100%;
+    margin-top: -1.5%;
+}
+
+.textFormat {
+  text-align: left;
+  margin-left: 2%;
+  font-size: 200%;
+  margin-top: 5%;
+
+}
+
+.textFormat p {
+  padding-top: 0.01%;
+}
+
+.formatImage{
+  margin-top: -32%;
+  margin-left: 80%;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+} 
+
+.hero h1{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.neon-light{
+    width: 15px;
+    height: 500px;
+    background: transparent;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 40px 5px #ffffff, inset 0 0 20px #fff, 0 0 160px 20px rgba(0, 136, 255, 0.182), inset 0 0 20px rgba(0, 136, 255, 0.239), 0 0 320px 30px rgba(0, 136, 255, 0.239), inset 0 0 20px rgba(0, 136, 255, 0.227);
+    animation: run 5s linear infinite;
+}
+
+@keyframes run{
+  0%{
+    left: 10%;
+    opacity: 0;
+  }
+
+  2%{
+    left: 10%;
+    opacity: 1;
+  }
+
+  4%{
+    left: 10%;
+    opacity: 0;
+  }
+
+  6%{
+    left: 10%;
+    opacity: 1;
+  }
+
+  8%{
+    left: 10%;
+    opacity: 0;
+  }
+
+  10%{
+    left: 10%;
+    opacity: 1;
+  }
+
+  100%{
+    left: 90%;
+    opacity: 1;
+  }
+}
+
+.neon-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neon-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 1), 0 0 50px rgba(0, 255, 255, 0.9), 0 0 70px rgba(0, 255, 255, 0.7);
+}
+
+footer{
+  text-align: center;
+}
+
+.projectText{
+  text-align: left; 
+  margin-top: -350px; 
+  margin-left: 700px;
+}
+
+.vertical-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.formatContact{
+  text-align: center;
+  margin-top: 24%;
+  font-size: 250%;
+}
+
+.image-container {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* background-image: url('image.png'); */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image in the container */
+  /* background-repeat: no-repeat; Prevents the image from repeating */
+}
